@@ -1,0 +1,94 @@
+@import 'variable';
+@import 'button';
+@import 'utilities';
+
+$base-font-size: 1rem;
+$font-size-sm: $base-font-size * 0.75;
+$font-size-lg: $base-font-size * 1.25;
+$font-size-xxlg: $base-font-size * 1.75;
+
+body{ font-family: $font-family; font-size: $base-font-size; margin: 0; }
+h2{ font-size: 23px; color: $primary-color; }
+
+nav{
+    background-color: #333;
+    padding: 10px;
+    a{
+        display: inline-block;
+        text-decoration: none;
+        color: #fff;
+        padding: 5px 10px;
+        font-size: 20px - 5;
+        &:hover{
+            color: red;
+        }
+        &:nth-child(2){
+            color: yellow;
+        }
+    }
+    
+}
+P{font-size: $font-size-sm; }
+
+
+$colors:(
+    "primary":red,
+    "secondary":blue,
+    "ternary":orange,
+    "info":yellow
+);
+
+@each $key, $value in $colors{
+    .text-#{$key}{
+        color: $value;
+    }
+    .bg-#{$key}{
+        background-color: $value
+    }
+    @for $i from 1 through 3{
+        .text-#{$key}-light-#{$i}{
+            color: lighten($value, $i* 10)
+        }
+    }
+}
+
+
+$bg-color: #222;
+$txt-color: #221;
+
+$box-show: true;
+
+.box-if{
+    color:$txt-color;
+    padding: 10px;
+    @if($bg-color == $txt-color){
+        background-color:red;
+    }
+    @else{
+        background-color:orange;
+    }
+    @if not $box-show{
+        display: none;
+    }
+}
+
+@mixin txt-stle {
+    font: 18px arial;
+    color: #000;
+    line-height: 1.5;
+}
+
+@function px_to_rem($px){
+    @return calc($px/16) + rem;
+}
+
+.h2{
+    @include txt-stle;
+    text-transform: capitalize;
+    font-size: px_to_rem(32)
+}
+.para {
+    @include txt-stle;
+    font-style: italic;
+}
+

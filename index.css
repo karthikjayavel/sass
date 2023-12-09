@@ -1,0 +1,226 @@
+.btn {
+  border: none;
+  padding: 5px 20px;
+  border-radius: 5px;
+  color: #fff;
+}
+
+.btn-primary {
+  background-color: red;
+}
+
+.btn-sec {
+  background-color: blue;
+}
+
+.btn-ter {
+  background-color: orange;
+}
+
+.p-0 {
+  padding: 0;
+}
+
+.p-1 {
+  padding: 1px;
+}
+
+.p-2 {
+  padding: 2px;
+}
+
+.p-3 {
+  padding: 3px;
+}
+
+.p-4 {
+  padding: 4px;
+}
+
+.p-5 {
+  padding: 5px;
+}
+
+.pl-0 {
+  padding-left: 0;
+}
+
+.pl-1 {
+  padding-left: 1px;
+}
+
+.pl-2 {
+  padding-left: 2px;
+}
+
+.pl-3 {
+  padding-left: 3px;
+}
+
+.pl-4 {
+  padding-left: 4px;
+}
+
+.pl-5 {
+  padding-left: 5px;
+}
+
+.m-0 {
+  margin: 0;
+}
+
+.m-1 {
+  margin: 1px;
+}
+
+.m-2 {
+  margin: 2px;
+}
+
+.m-3 {
+  margin: 3px;
+}
+
+.m-4 {
+  margin: 4px;
+}
+
+.m-5 {
+  margin: 5px;
+}
+
+body {
+  font-family: "Roboto", arial;
+  font-size: 1rem;
+  margin: 0;
+}
+
+h2 {
+  font-size: 23px;
+  color: #f22;
+}
+
+nav {
+  background-color: #333;
+  padding: 10px;
+}
+nav a {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  padding: 5px 10px;
+  font-size: 15px;
+}
+nav a:hover {
+  color: red;
+}
+nav a:nth-child(2) {
+  color: yellow;
+}
+
+P {
+  font-size: 0.75rem;
+}
+
+.text-primary {
+  color: red;
+}
+
+.bg-primary {
+  background-color: red;
+}
+
+.text-primary-light-1 {
+  color: #ff3333;
+}
+
+.text-primary-light-2 {
+  color: #ff6666;
+}
+
+.text-primary-light-3 {
+  color: #ff9999;
+}
+
+.text-secondary {
+  color: blue;
+}
+
+.bg-secondary {
+  background-color: blue;
+}
+
+.text-secondary-light-1 {
+  color: #3333ff;
+}
+
+.text-secondary-light-2 {
+  color: #6666ff;
+}
+
+.text-secondary-light-3 {
+  color: #9999ff;
+}
+
+.text-ternary {
+  color: orange;
+}
+
+.bg-ternary {
+  background-color: orange;
+}
+
+.text-ternary-light-1 {
+  color: #ffb733;
+}
+
+.text-ternary-light-2 {
+  color: #ffc966;
+}
+
+.text-ternary-light-3 {
+  color: #ffdb99;
+}
+
+.text-info {
+  color: yellow;
+}
+
+.bg-info {
+  background-color: yellow;
+}
+
+.text-info-light-1 {
+  color: #ffff33;
+}
+
+.text-info-light-2 {
+  color: #ffff66;
+}
+
+.text-info-light-3 {
+  color: #ffff99;
+}
+
+.box-if {
+  color: #221;
+  padding: 10px;
+  background-color: orange;
+}
+
+.h2 {
+  font: 18px arial;
+  color: #000;
+  line-height: 1.5;
+  text-transform: capitalize;
+  font-size: 2rem;
+}
+
+.para {
+  font: 18px arial;
+  color: #000;
+  line-height: 1.5;
+  font-style: italic;
+}
+
+/*# sourceMappingURL=index.css.map */

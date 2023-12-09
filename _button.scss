@@ -1,0 +1,14 @@
+$bg_primary_color: red;
+$bg_sec_color: blue;
+$bg_ter_color: orange;
+
+.btn{
+    border: none;
+    padding: 5px 20px;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.btn-primary { background-color: $bg_primary_color; }
+.btn-sec { background-color: $bg_sec_color }
+.btn-ter { background-color: $bg_ter_color }

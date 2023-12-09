@@ -1,0 +1,53 @@
+$padding: 1px;
+
+$utilities: (
+    "padding": (
+        "prefix": "p",
+        "values": (
+            "0":0,
+            "1": $padding * 1,
+            "2": $padding * 2,
+            "3": $padding * 3,
+            "4": $padding * 4,
+            "5": $padding * 5,
+        ),
+    ),
+    "padding-left": (
+        "prefix": "pl",
+        "values": (
+            "0":0,
+            "1": $padding * 1,
+            "2": $padding * 2,
+            "3": $padding * 3,
+            "4": $padding * 4,
+            "5": $padding * 5,
+        ),
+    ),
+   "margin":(
+       "prefix": "m",
+       "values": (
+        "0":0,
+        "1": $padding * 1,
+        "2": $padding * 2,
+        "3": $padding * 3,
+        "4": $padding * 4,
+        "5": $padding * 5,
+       ),
+   ),
+);
+
+@each $h, $k in $utilities{
+    @debug $h;
+    @debug $k;
+}
+
+
+@each $property, $map in $utilities{
+    $prefix: map-get($map, "prefix" );
+    $values: map-get($map , "values" );
+    @each $key, $value in $values{
+       .#{$prefix}-#{$key}{
+            #{$property}: $value;
+        }
+    }
+}
